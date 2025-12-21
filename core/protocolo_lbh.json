@@ -1,0 +1,7 @@
+{
+  "protocolo": "LBH",
+  "version": "1.0.0",
+  "descripcion": "Lenguaje Binario HormigasAIS para comunicación entre nodos",
+  "estados_validos": ["explorando", "analizando", "reportando", "durmiendo"],
+  "prioridad": "alta"
+}
