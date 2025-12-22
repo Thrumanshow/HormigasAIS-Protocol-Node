@@ -9,5 +9,6 @@
     "energy_export.lbh"
   ],
   "validator": "validation/verify_integrity.py",
+"contract_path": "contracts/config/config.human",
   "status": "registered"
 }
