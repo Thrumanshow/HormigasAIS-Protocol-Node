@@ -1,11 +1,13 @@
 import time
 import os
+# --- NUEVA IMPORTACIÓN ---
+from scripts.solar_engine import simulate_energy_cycle
+# -------------------------
 
 # Intentar cargar las herramientas de color de HormigasAIS
 try:
     from tools.utils import log_event, print_contract_summary
 except ImportError:
-    # Fallback si aún no creamos el archivo utils.py
     def log_event(m, level="INFO"):
         colors = {"SUCCESS": "\033[92m", "WARNING": "\033[93m", "INFO": "\033[94m", "RESET": "\033[0m"}
         c = colors.get(level, colors["INFO"])
@@ -31,6 +33,12 @@ def run_protocol_demo():
     # 3. Gobernanza
     log_event("PASO 3: Aplicando reglas de gobernanza solar...", level="WARNING")
     time.sleep(1)
+    
+    # --- NUEVA LÓGICA: EJECUCIÓN DEL MOTOR ---
+    log_event("PASO 4: Iniciando ciclo de distribución de carga...", level="INFO")
+    time.sleep(1)
+    simulate_energy_cycle()
+    # -----------------------------------------
     
     log_event("SISTEMA LISTO Y ESPERANDO VOLUNTAD HUMANA (HVT).", level="SUCCESS")
 
