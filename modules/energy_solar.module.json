@@ -1,0 +1,13 @@
+{
+  "module": "LBH-EnergySolar",
+  "path": "/data/data/com.termux/files/home/HormigasAIS-LBH-EnergySolar",
+  "entrypoint": "contracts/config/config.human",
+  "scripts": [
+    "solar_tracking.lbh",
+    "energy_cutoff.lbh",
+    "island_mode.lbh",
+    "energy_export.lbh"
+  ],
+  "validator": "validation/verify_integrity.py",
+  "status": "registered"
+}
