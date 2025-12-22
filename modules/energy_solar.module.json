@@ -1,14 +1,21 @@
 {
   "module": "LBH-EnergySolar",
-  "path": "/data/data/com.termux/files/home/HormigasAIS-LBH-EnergySolar",
-  "entrypoint": "contracts/config/config.human",
+  "path": "../HormigasAIS-LBH-EnergySolar",
+
+  "contract_path": "contracts/config/config.human",
+
+  "entrypoint": "scripts/solar_tracking.lbh",
+
   "scripts": [
-    "solar_tracking.lbh",
-    "energy_cutoff.lbh",
-    "island_mode.lbh",
-    "energy_export.lbh"
+    "scripts/solar_tracking.lbh",
+    "scripts/energy_cutoff.lbh",
+    "scripts/island_mode.lbh",
+    "scripts/energy_export.lbh"
   ],
+
   "validator": "validation/verify_integrity.py",
-"contract_path": "contracts/config/config.human",
-  "status": "registered"
+
+  "status": "SEALED",
+  "governance": "HUMAN_REQUIRED",
+  "execution": "BLOCKED"
 }
