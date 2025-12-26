@@ -75,3 +75,8 @@ git clone [https://github.com/Thrumanshow/HormigasAIS-Protocol-Node.git](https:/
 cd HormigasAIS-Protocol-Node
 ./scripts/education/start_student_node.sh
 python3 scripts/education/check_status.py
+
+## 🛡️ Hito de Soberanía Local - 2025-12-26
+- Se validó la independencia total del Nodo respecto a dependencias de red externas.
+- Protocolo LBH-2025 operativo en entorno aislado (Edge).
+- El adaptador de hardware ha sido movido a infraestructura privada bajo el principio de 'Caja Negra Soberana'.
