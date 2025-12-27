@@ -18,3 +18,4 @@ main
 logs/*
 !logs/guardia_nocturna.log
 !contracts/config/config.human
+!logs/node_health_report.txt
