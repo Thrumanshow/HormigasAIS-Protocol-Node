@@ -7,3 +7,5 @@ venv/
 
 logs/
 *.log
+contracts/config/config.human
+*.human
