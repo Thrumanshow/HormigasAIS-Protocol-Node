@@ -12,3 +12,8 @@ contracts/config/config.human
 logs/
 *.human
 .instrucciones_privadas
+check_post_ghost.sh
+post_ghost_report.dat
+reentry_policy.yaml
+validate_energy_solar.py
+main
