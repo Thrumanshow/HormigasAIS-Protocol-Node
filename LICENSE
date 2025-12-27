@@ -21,6 +21,7 @@ You are NOT permitted to:
 - Commercialize, sublicense, or redistribute this repository or derivatives.
 - Reverse engineer, extract, or replicate the LBH Protocol, HormigasAIS Nodes,
   Human Will Technology (HVT), or any sovereign control logic.
+- Present this work as an independent or competing solution.
 
 4. SEPARATION OF SCOPE
 This repository does NOT grant access to:
@@ -30,9 +31,10 @@ This repository does NOT grant access to:
 All core systems remain private, sovereign, and contract-governed.
 
 5. NO WARRANTY
-This software is provided "AS IS", without warranty of any kind.
+This software is provided "AS IS", without warranty of any kind, express or implied.
 
 6. COMMERCIAL ACCESS
-Any commercial use requires explicit written authorization from the author.
+Any commercial use, integration, licensing, or partnership requires
+explicit written authorization from the author.
 
 Contact: HormigasAIS / Cristhiam Leonardo Hernández Quiñonez
