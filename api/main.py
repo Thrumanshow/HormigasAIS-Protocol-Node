@@ -1,19 +1,14 @@
-import json
-import os
 from fastapi import FastAPI
+from api.health import router as health_router
+from core.health_gate import enforce_health_gate
 
-app = FastAPI(title="HormigasAIS Protocol Node")
+app = FastAPI(title="HormigasAIS Node API")
+
+# El Guardián: Si la salud no es nominal, la API no arranca
+enforce_health_gate()
+
+app.include_router(health_router, prefix="/v1")
 
 @app.get("/")
 def read_root():
-    return {"status": "online", "node": "Maestro", "protocol": "LBH"}
-
-@app.get("/protocolo")
-def get_protocolo():
-    # Buscamos el archivo de especificación en la carpeta core
-    path = os.path.join("core", "protocolo_lbh.json")
-    if os.path.exists(path):
-        with open(path, "r") as f:
-            data = json.load(f)
-        return data
-    return {"error": "Archivo de protocolo no encontrado"}
+    return {"message": "HormigasAIS Protocol Node - LBH-2025 Active"}
