@@ -9,3 +9,6 @@ logs/
 *.log
 contracts/config/config.human
 *.human
+logs/
+*.human
+.instrucciones_privadas
