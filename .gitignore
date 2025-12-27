@@ -16,3 +16,4 @@ reentry_policy.yaml
 validate_energy_solar.py
 main
 logs/*
+!logs/guardia_nocturna.log
