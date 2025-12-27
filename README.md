@@ -1,9 +1,9 @@
-# HormigasAIS-Protocol-Node
-> **Soberanía de Datos e Inteligencia Distribuida en el Borde.**
+# HormigasAIS-Protocol-Node (Core)
+### 📜 HCSL-1.0 Protected
 
-### 📜 LICENCIA COMERCIAL (Investor Access)
-Este repositorio opera bajo la **HormigasAIS Commercial Showcase License (HCSL-1.0)**. 
-El acceso está limitado a fines de evaluación y auditoría. La firma HVT es requerida para cualquier uso derivado del protocolo LBH.
+Arquitectura técnica del Nodo Maestro. Contiene la implementación del bus de feromonas XOXO y el centinela de autodefensa.
 
-## 🚀 Despliegue de la Colonia
-Sistema basado en agentes autónomos ligeros y el bus de feromonas **XOXO-BUS**.
+**Estructura:**
+- `/core`: Lógica de decisión autónoma.
+- `/api`: Voz del Nodo Maestro.
+- `/scripts`: Automatización de agentes.
