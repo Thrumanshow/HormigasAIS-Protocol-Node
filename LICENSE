@@ -1,26 +1,38 @@
-MIT License + HormigasAIS Sovereignty Clause
+HormigasAIS Commercial Showcase License (HCSL-1.0)
 
 Copyright (c) 2025 Cristhiam Leonardo Hernández Quiñonez
+HormigasAIS — Distributed Intelligence from El Salvador.
+All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. PURPOSE
+This repository is a commercial and technical demonstration ("Showcase") of the
+HormigasAIS Binary Language (LBH) and its efficiency principles.
+It is provided solely for evaluation, visualization, and strategic review purposes.
 
-1. The above copyright notice and this permission notice shall be included in all
-   copies or substantial portions of the Software.
+2. PERMITTED USE
+You are permitted to:
+- View, clone, and execute the demonstration code locally.
+- Evaluate performance characteristics and architectural concepts.
+- Use the repository for internal analysis, presentations, or investment review.
 
-2. SOVEREIGNTY CLAUSE: Any implementation or derivative of this protocol (LBH) 
-   must respect the principle of "Data Sovereignty" (Soberanía de Datos), 
-   ensuring that the end-user maintains absolute control over their local 
-   infrastructure and information.
+3. PROHIBITED USE
+You are NOT permitted to:
+- Use this code or its concepts in production environments.
+- Commercialize, sublicense, or redistribute this repository or derivatives.
+- Reverse engineer, extract, or replicate the LBH Protocol, HormigasAIS Nodes,
+  Human Will Technology (HVT), or any sovereign control logic.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+4. SEPARATION OF SCOPE
+This repository does NOT grant access to:
+- The HormigasAIS LBH Protocol core.
+- The HormigasAIS Node infrastructure.
+- Any Human Authority Contracts (.human) or HVT mechanisms.
+All core systems remain private, sovereign, and contract-governed.
+
+5. NO WARRANTY
+This software is provided "AS IS", without warranty of any kind.
+
+6. COMMERCIAL ACCESS
+Any commercial use requires explicit written authorization from the author.
+
+Contact: HormigasAIS / Cristhiam Leonardo Hernández Quiñonez
