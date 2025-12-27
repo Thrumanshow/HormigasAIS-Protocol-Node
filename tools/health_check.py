@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timezone
 import subprocess
 import os
 
@@ -9,11 +9,13 @@ def git_hash():
         return "UNVERIFIED"
 
 os.makedirs("logs", exist_ok=True)
+# Uso de datetime.now(timezone.utc) para evitar el DeprecationWarning
+now = datetime.now(timezone.utc).isoformat()
 report = f"""
 =====================================================
 🐜 HORMIGAS AIS - NODE HEALTH REPORT [LBH-2025]
 =====================================================
-TIMESTAMP: {datetime.utcnow().isoformat()}Z
+TIMESTAMP: {now}
 STATUS: NOMINAL
 AUTHORITY: VERIFIED
 MODE: BLACK-BOX

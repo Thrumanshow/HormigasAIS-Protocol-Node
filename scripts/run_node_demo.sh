@@ -16,4 +16,4 @@ fi
 echo "🟢 Node health: NOMINAL"
 export NODE_MODE=OBSERVER
 echo "🚀 Starting API in Observer Mode..."
-# python3 api/main.py (Comentado hasta tener el entrypoint listo)
+python3 -m uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload

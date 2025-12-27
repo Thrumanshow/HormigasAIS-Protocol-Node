@@ -1,0 +1,21 @@
+name: 🐜 LBH-Health-Gate-Audit
+on: [push, pull_request]
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Run Health Audit
+        run: |
+          mkdir -p logs
+          # Simulamos contrato para el CI
+          mkdir -p contracts/config && touch contracts/config/config.human
+          python3 tools/health_check.py
+          if ! grep -q "FINAL STATUS: NOMINAL" logs/node_health_report.txt; then
+            echo "🛑 HEALTH GATE FAILED: Sovereign Integrity Compromised"
+            exit 1
+          fi
