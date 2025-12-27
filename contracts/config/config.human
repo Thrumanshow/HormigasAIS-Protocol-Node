@@ -1,0 +1,37 @@
+# 🐜 HormigasAIS - LBH Sovereign Protocol 2025
+# Autoridad: Cristhiam Leonardo Hernández Quiñonez (San Miguel, SV)
+# Hito: Auditoría de Resiliencia LBH-2025 Completada
+
+protocol_meta:
+  version: "2025.12.26-RELEASE"
+  ecosystem: "HormigasAIS"
+  hvt_authority: "HUMAN_WILL_VERIFIED"
+  sovereignty_level: "MAX_LOCKDOWN"
+  sandbox_mode: false
+
+security_layer:
+  encryption: "SHA3-512"
+  kill_switch: "STOP_H_PROT"
+  audit_hash: "HAP-VALIDATED-$(date +'%Y%m%d')"
+
+nodes_registry:
+  - id: "N001"
+    name: "Main-Grid-Controller"
+    type: "Corporativo"
+    max_output_kw: 100
+    priority: 3
+  - id: "N002"
+    name: "Residential-Inverter-A"
+    type: "Premium"
+    max_output_kw: 15
+    priority: 2
+  - id: "N003"
+    name: "Guest-Panel-System"
+    type: "Freemium"
+    max_output_kw: 5
+    priority: 1
+
+governance_rules:
+  - rule: "DISCONNECT_ON_LOW_BATTERY"
+    threshold: 20
+    action: "SHED_LEVEL_1_AND_2"
